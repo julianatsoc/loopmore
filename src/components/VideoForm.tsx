@@ -1,6 +1,6 @@
 import { useState } from "react";
 import YouTube from "react-youtube";
-import LoopMoreLogo from "../assets/LoopMoreLogo.svg";
+import Header from "./Header.tsx";
 
 const VideoForm = () => {
   const [inputUrl, setInputUrl] = useState("");
@@ -17,11 +17,8 @@ const VideoForm = () => {
   };
 
   return (
-    <div className="mt-16 flex flex-col items-center justify-center bg-glass shadow-glass rounded-lg w-[600px] h-[800px] border-glass backdrop-blur-[5px]">
-      <div>
-        <img src={LoopMoreLogo} alt="LoopMore Logo" className="w-24 h-24" />
-        <h2 className="font-cedarville">LoopMore</h2>
-      </div>
+    <div className="mt-16 flex flex-col items-center justify-center bg-glass shadow-glass rounded-lg w-[900px] h-[900px] border-glass backdrop-blur-[5px]">
+      <Header />
       <div className="flex flex-col items-center space-y-4">
         <input
           type="text"
