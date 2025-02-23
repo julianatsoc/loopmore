@@ -15,7 +15,7 @@ const Main = () => {
         muted
       />
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 sm:p-8">
-        <div className="flex flex-col gap-4 items-center justify-center bg-glass shadow-glass rounded-lg w-full max-w-lg sm:max-w-2xl h-auto border-glass backdrop-blur-[15px] px-6 sm:p-12">
+        <div className="flex flex-col gap-4 items-center justify-center bg-glass shadow-glass rounded-lg w-full max-w-lg sm:max-w-2xl h-auto border-glass backdrop-blur-[15px] px-6 py-6 sm:p-12">
           <Header />
           <AvailableAudios />
 
