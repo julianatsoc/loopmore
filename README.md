@@ -1,50 +1,71 @@
-# React + TypeScript + Vite
+# 🎶 **Loopmore - Use to focus** 🍂
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Loopmore is a web project inspired by Taylor Swift's album _evermore_, creating an immersive experience with ambient audio and a Spotify playlist to complement the atmosphere. It offers background sounds like rain 🌧️, coffee ☕, and brown noise 🌰, allowing the user to create a unique environment. In addition, the background video interface and a Spotify playlist make the experience even more special 🎧.
 
-Currently, two official plugins are available:
+## 🛠️ **Resources**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Background video** 🎥: The background video plays automatically, creating a visual atmosphere with the music and sounds.
+- **Ambient sounds** 🎶: Includes sounds like "Rain noise", "Coffee" and "Brown noise", available to be played along with the Spotify playlist.
+- **Spotify** 🎵: You can listen to the playlist directly in your browser via the Spotify Web Player, but to access the full playlist, you need to be logged into Spotify.
+- **Style inspired by Taylor Swift's _evermore_** 🎼: The color palette and overall aesthetic were inspired by the album's atmosphere.
 
-## Expanding the ESLint configuration
+## 📥 **Installation**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🔧 **Pre-requisites**
 
-- Configure the top-level `parserOptions` property like this:
+Make sure you have the following software installed:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- [Node.js](https://nodejs.org/) (v18 or higher) 🖥️
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) for package management 🎁
+
+### ⚙️ **Steps to run the project locally**
+
+**Clone the repository**:
+
+```bash
+git clone [https://github.com/julianatsoc/loopmore/](https://github.com/julianatsoc/loopmore/)
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Install the dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd loopmore
+npm install
 ```
+
+or if you are using yarn
+
+```bash
+yarn install
+```
+
+### ⚙️ Start the development server:
+
+Now, run the development server to start running the project:
+
+```bash
+npm run dev
+
+```
+
+or
+
+```bash
+yarn start
+```
+
+## **📦 Dependencies**
+
+- **@headlessui/react:** Accessible component library, used for the Switch ⚙️
+- **@tailwindcss/vite:** Integrates Tailwind CSS with Vite 🎨.
+- **react e react-dom:** Main libraries for creating reactive interfaces 🔄.
+
+## **🎨 Style**
+
+The style was inspired by the aesthetics of the album evermore, with a soft, somber color palette and a minimalist design that highlights the auditory and visual experience 🍂.
+
+## 🧩 Main components
+
+- **Main**: Central component that displays the background video and the interface with the audios and the Spotify player 📀.
+- **AvailableAudios:** Component that provides a list of available audios for the user to choose 🎧.
+- **Header:** Header component that contains the title of the application 🖋️..
