@@ -1,12 +1,17 @@
-import { useRef, useState } from "react";
+import { useRef, useState, ChangeEvent } from "react";
 import { Switch } from "@headlessui/react";
 
-export default function AudioPlayer({ audioUrl, audioTitle }) {
-  const audioRef = useRef(new Audio(audioUrl));
-  const [enabled, setEnabled] = useState(false);
-  const [volume, setVolume] = useState(0.4);
+interface AudioPlayerProps {
+  audioUrl: string;
+  audioTitle: string;
+}
 
-  const handleSwitchChange = (state) => {
+const AudioPlayer: React.FC<AudioPlayerProps> = ({ audioUrl, audioTitle }) => {
+  const audioRef = useRef<HTMLAudioElement>(new Audio(audioUrl));
+  const [enabled, setEnabled] = useState<boolean>(false);
+  const [volume, setVolume] = useState<number>(0.4);
+
+  const handleSwitchChange = (state: boolean) => {
     setEnabled(state);
     const audio = audioRef.current;
     if (state) {
@@ -18,8 +23,8 @@ export default function AudioPlayer({ audioUrl, audioTitle }) {
     }
   };
 
-  const handleVolumeChange = (e) => {
-    const newVolume = e.target.value;
+  const handleVolumeChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const newVolume = parseFloat(e.target.value);
     setVolume(newVolume);
     const audio = audioRef.current;
     audio.volume = newVolume;
@@ -59,4 +64,6 @@ export default function AudioPlayer({ audioUrl, audioTitle }) {
       )}
     </div>
   );
-}
+};
+
+export default AudioPlayer;
