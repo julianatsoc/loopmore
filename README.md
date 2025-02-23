@@ -23,7 +23,7 @@ Make sure you have the following software installed:
 **Clone the repository**:
 
 ```bash
-git clone [https://github.com/julianatsoc/loopmore/](https://github.com/julianatsoc/loopmore/)
+git clone https://github.com/julianatsoc/loopmore
 ```
 
 Install the dependencies:
