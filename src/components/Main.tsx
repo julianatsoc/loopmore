@@ -5,20 +5,17 @@ import "./Main.module.css";
 
 const Main = () => {
   return (
-    <div className="relative w-full h-full">
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+    <div className="relative w-screen min-h-screen">
+      <div className="absolute inset-0 bg-black opacity-50"></div>
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover repeat"
+        className="fixed top-0 left-0 w-screen h-screen object-cover"
         src={videoBg}
         autoPlay
         loop
         muted
       />
-      <div className="relative z-10 flex flex-col items-center justify-center h-4/5 ">
-        <div
-          className="mt-35 flex gap-4 flex-col items-center justify-center bg-glass shadow-glass rounded-lg w-2xl
- h-auto border-glass backdrop-blur-[15px] p-12"
-        >
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 sm:p-8">
+        <div className="flex flex-col gap-4 items-center justify-center bg-glass shadow-glass rounded-lg w-full max-w-lg sm:max-w-2xl h-auto border-glass backdrop-blur-[15px] px-6 sm:p-12">
           <Header />
           <AvailableAudios />
 
