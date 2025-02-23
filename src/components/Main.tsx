@@ -3,6 +3,8 @@ import Header from "./Header";
 import AudioPlayer from "./AudioPlayer";
 import TypingNoise from "../assets/keyboard.mp3";
 import BrownNoise from "../assets/brown-noise.ogg";
+import CafeNoise from "../assets/cafe-noise.mp3";
+import RainNoise from "../assets/rain.mp3";
 
 const Main = () => {
   return (
@@ -23,6 +25,8 @@ const Main = () => {
           <Header />
           <AudioPlayer audioUrl={TypingNoise} audioTitle="Typing Noise" />
           <AudioPlayer audioUrl={BrownNoise} audioTitle="Brown Noise" />
+          <AudioPlayer audioUrl={CafeNoise} audioTitle="Cafe Ambience" />
+          <AudioPlayer audioUrl={RainNoise} audioTitle="Rain Noise" />
         </div>
       </div>
     </div>
