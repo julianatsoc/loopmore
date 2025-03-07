@@ -2,6 +2,9 @@
 
 Loopmore is a web project inspired by Taylor Swift's album _evermore_, creating an immersive experience with ambient audio and a Spotify playlist to complement the atmosphere. It offers background sounds like rain 🌧️, coffee ☕, and brown noise 🌰, allowing the user to create a unique environment. In addition, the background video interface and a Spotify playlist make the experience even more special 🎧.
 
+![Loopmore Interface](https://repository-images.githubusercontent.com/937463853/df3a4788-b699-4f1f-9391-1bb16404c3f5)
+
+
 ## 🛠️ **Resources**
 
 - **Background video** 🎥: The background video plays automatically, creating a visual atmosphere with the music and sounds.
